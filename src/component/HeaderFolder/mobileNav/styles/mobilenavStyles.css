@@ -83,6 +83,9 @@
 }
 
 .mnav_bg {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
   position: absolute;
   z-index: 0;
   width: 160%;
