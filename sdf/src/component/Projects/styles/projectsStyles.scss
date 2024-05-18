@@ -141,9 +141,6 @@ img{
             }
         }
     }
-    .project-link{
-        margin: 0;
-    }
     .background_link{
         padding: 24px 37px;
         h3{
@@ -155,10 +152,11 @@ img{
         grid-template-rows: repeat(3, 255px);
         .third-project{
             grid-column:  2;
-            grid-row:span 2;
+            grid-row: 3;
             width: 270px;
             object-fit:cover;
             object-position: center;
+            // display: none;
         }
         .first-project{
             grid-column: span 1;
@@ -170,6 +168,7 @@ img{
             width: 270px;
             grid-column:span  1;
             grid-row: span 2;
+
         }
         .project-block_img{
             grid-column: 1;
@@ -199,6 +198,7 @@ img{
     }
 }
 @media (max-width:580px){
+
     .first-project, .second-project, .third-project{
         display: none;
     }
@@ -229,6 +229,7 @@ img{
     .project-link{
         left: 9%;
         top: 89%;
+        margin: 0;
     }
 }
 @media(max-width:450px){

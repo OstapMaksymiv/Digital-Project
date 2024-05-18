@@ -25,9 +25,9 @@ function MobileNav(props) {
             <Link to="/Contacts">COntacts</Link>
             </li>
             <li className='socials'>
-              <a href="#"><i className="ri-linkedin-box-line"></i></a>
-              <a href="#"><i className="ri-twitter-x-fill"></i></a>
-              <a href="#"><i className="ri-youtube-line"></i></a>
+              <a href="https://www.linkedin.com"><i className="ri-linkedin-box-line"></i></a>
+              <a href="https://twitter.com"><i className="ri-twitter-x-fill"></i></a>
+              <a href="https://www.youtube.com"><i className="ri-youtube-line"></i></a>
             </li>
           </ul>
         </nav>

@@ -81,11 +81,11 @@ function ContactUs() {
                     <label>By submitting an application you agree to the privacy policy</label>
                 </span>
                 </form>
-                <Slide direction='right'  triggerOnce={true}>
-              <Fade  triggerOnce={true}>
+                {/* <Slide direction='right'  triggerOnce={true}>
+              <Fade  triggerOnce={true}> */}
                 <img src={b1} style={{width:'749px', height:'459px'}} alt="" className="contact-img" />
-                </Fade>
-            </Slide>
+                {/* </Fade>
+            </Slide> */}
             </div>
             <button onClick={handleClick} className='submit_btn' type='submit'>
                 <span>Send Email</span>

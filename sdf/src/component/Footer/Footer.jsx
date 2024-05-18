@@ -55,17 +55,17 @@ function Footer() {
                         <h4>Social Media</h4>
                         <ul>
                             <li>
-                                <a href="https://www.facebook.com/home.php">
+                                <a href="https://www.facebook.com">
                                     <img src={facebook} alt="" />
                                 </a>
                             </li>
                             <li>
-                                <a href="https://twitter.com/home">
+                                <a href="https://twitter.com">
                                     <img src={twitter} alt="" />
                                 </a>
                             </li>
                             <li>
-                                <a href="https://www.linkedin.com/feed/">
+                                <a href="https://www.linkedin.com/">
                                     <img src={linkedIn} alt="" />
                                 </a>
                             </li>

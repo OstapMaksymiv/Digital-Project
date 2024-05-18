@@ -31,11 +31,7 @@ function Projects() {
                 <Fade triggerOnce={true}  delay={500}>
                     <img src={project1} alt="" className='second-project'/>
                 </Fade>
-                <Fade triggerOnce={true} delay={100}>
-                    <Slide direction='left' triggerOnce={true}>
-                        <img src={project3} alt="" className='third-project'/>
-                    </Slide>
-                </Fade>
+                <img src={project3} alt="" className='third-project'/>
             </div>
             <Fade triggerOnce={true} delay={600}>
                 <a className='project-link' href="/Projects">

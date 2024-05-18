@@ -143,9 +143,6 @@ img {
   .projects .container h2 {
     margin-bottom: 30px;
   }
-  .project-link {
-    margin: 0;
-  }
   .background_link {
     padding: 24px 37px;
   }
@@ -158,7 +155,7 @@ img {
   }
   .projects-images .third-project {
     grid-column: 2;
-    grid-row: span 2;
+    grid-row: 3;
     width: 270px;
     -o-object-fit: cover;
        object-fit: cover;
@@ -228,6 +225,7 @@ img {
   .project-link {
     left: 9%;
     top: 89%;
+    margin: 0;
   }
 }
 @media (max-width: 450px) {
