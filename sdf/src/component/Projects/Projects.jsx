@@ -4,6 +4,7 @@ import project3 from '@assets/v5.jpg';
 import arrow from '@assets/white-arrow.svg';
 import './styles/projectsStyles.css'
 import { Fade, Slide } from "react-awesome-reveal";
+import { Link } from 'react-router-dom';
 function Projects() {
   return (
     <section className="projects">
@@ -15,7 +16,7 @@ function Projects() {
             </Fade>
             <div className="projects-images">
                     <div className="project-block_img">
-                        <a href='/Projects'>
+                        <Link to='/Projects'>
                             <div className='background_link'>
                                 <h3>Route Project</h3>
                                 <p>
@@ -23,7 +24,7 @@ function Projects() {
                                     <img src={arrow} alt="" />
                                 </p>
                             </div>
-                        </a>
+                        </Link>
                     </div>
                 <Fade triggerOnce={true} delay={300}>
                     <img src={project2} alt="" className='first-project'/>
