@@ -10,11 +10,11 @@ function Main() {
   return (
     <>
     <h1>asdads</h1>
-    {/* <Top/>
+    <Top/>
     <About/>
     <MainFocus/>
     <Projects/>
-    <ContactUs/> */}
+    <ContactUs/>
     </>
   )
 }
