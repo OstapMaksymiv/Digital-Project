@@ -7,11 +7,11 @@ export function Layout() {
 
     return (
         <>
-            {/* <Header /> */}
+            <Header />
             <main>
                 <Outlet />
             </main>
-            {/* <Footer/> */}
+            <Footer/>
         </>
     );
 }

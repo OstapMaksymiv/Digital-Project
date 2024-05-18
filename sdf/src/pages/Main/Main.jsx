@@ -9,7 +9,6 @@ function Main() {
   
   return (
     <>
-    <h1>asdads</h1>
     <Top/>
     <About/>
     <MainFocus/>
