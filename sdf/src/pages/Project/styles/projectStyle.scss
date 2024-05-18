@@ -1,0 +1,114 @@
+.container{
+    max-width:1170px;
+    margin: 0 auto;
+}
+.project-section{
+    margin-top: 30px;
+    padding: 0 20px;
+}
+
+.project-title{
+    color: #333333;
+    font-weight: bold;
+    font-size: 64px;
+    line-height: 60px;
+    padding-bottom: 30px;
+}
+
+.project-block{
+    border-bottom: 2px solid rgba(108, 165, 201, 0.3843137255);
+    border-top: 2px solid rgba(108, 165, 201, 0.3843137255);
+    padding: 35px;
+    display: flex;
+    align-items: center;
+    gap: 70px;
+    p{
+        color: #333333;
+        font-weight: 300;
+        font-size: 18px;
+    }
+}
+.img-list{
+    display: flex;
+    gap:  15px;
+
+    img{
+        width: 253px;
+        height: 380px ;
+        object-fit: cover;
+        object-position: center;
+    }
+}
+.bigImg{
+    margin-top: 35px;
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+    object-position: center;
+}
+.bg-loader{
+    background-color: #ffffff;
+    height: 50vh;
+    width: 50vw;
+}
+.loader {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: rotateZ(45deg) translate(-50%, -50%);
+    perspective: 1000px;
+    border-radius: 50%;
+    width: 48px;
+    height: 48px;
+    color: #6ca5c9;
+}
+.loader:before,
+.loader:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: inherit;
+    height: inherit;
+    border-radius: 50%;
+    transform: rotateX(70deg);
+    animation: 1s spin linear infinite;
+}
+.loader:after {
+    color: #333333;
+    transform: rotateY(70deg);
+    animation-delay: .4s;
+}
+@media(max-width:1150px){
+    .project-section{
+        .container{
+            max-width:700px;
+        }
+    }
+    .project-block{
+        flex-direction: column;
+        p{
+            text-align: justify;
+        }
+    }
+    .img-list{
+        order: -1;
+        gap: 65px;
+    }
+}
+@media(max-width:770px){
+    .img-list{
+        display: none;
+    }
+    .project-block{
+        padding: 10px;
+    }
+}
+@media(max-width:450px){
+    .project-title{
+        font-size: 35px;
+        font-weight: bold;
+        line-height: 30px;
+    }
+}

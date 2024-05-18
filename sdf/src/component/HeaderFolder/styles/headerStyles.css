@@ -1,0 +1,171 @@
+.container {
+  max-width: 1170px;
+  margin: 0 auto;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px 20px;
+}
+
+.logo {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+
+.menu {
+  display: flex;
+  gap: 0 55px;
+  align-items: center;
+}
+
+.active {
+  border-bottom: 1px solid #333333;
+  border-top: 1px solid #333333;
+}
+.active a {
+  cursor: default;
+}
+
+.menu_list {
+  background-image: linear-gradient(to right, #6ca5c9 50%, #333333 50%);
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 400;
+  padding: 5px 7px;
+  transition: all 0.3s ease;
+  position: relative;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.menu_list:not(.active) {
+  cursor: pointer;
+}
+
+.menu_list:not(.active):before {
+  content: "";
+  background: #333333;
+  display: block;
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  width: 0;
+  height: 1px;
+  transition: all 0.3s ease-in-out;
+}
+
+.menu_list:not(.active):after {
+  content: "";
+  background: #333333;
+  display: block;
+  position: absolute;
+  top: -1px;
+  right: 0;
+  width: 0;
+  height: 1px;
+  transition: all 0.3s ease-in-out;
+}
+
+.lock {
+  overflow-y: hidden;
+}
+
+.hamburger-toggler {
+  display: none;
+  position: relative;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.hamburger-toggler .hamburger-icon {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hamburger-icon span {
+  display: block;
+  width: 30px;
+  height: 2px;
+  position: relative;
+  background-color: #000000;
+  transition: background-color 0.35s 0s ease-out;
+}
+
+.hamburger-icon span::before,
+.hamburger-icon span::after {
+  content: "";
+  position: absolute;
+  width: 15px;
+  height: 2px;
+  background-color: #000000;
+  transition: top 0.2s 0.4s ease-out, left 0.2s 0.2s ease-out, right 0.2s 0.2s ease-out, width 0.2s 0.2s ease-out, transform 0.2s ease-out;
+}
+
+.hamburger-icon span::before {
+  top: 12px;
+  left: 20px;
+}
+
+.hamburger-icon span::after {
+  top: -12px;
+  right: 20px;
+}
+
+.hamburger-toggler.active .hamburger-icon span {
+  background-color: transparent;
+}
+
+.hamburger-toggler.active .hamburger-icon span::before,
+.hamburger-toggler.active .hamburger-icon span::after {
+  top: 0;
+  width: 30px;
+  transition: top 0.2s ease-out, left 0.2s 0.2s ease-out, right 0.2s 0.2s ease-out, width 0.2s 0.2s ease-out, transform 0.2s 0.4s ease-out;
+}
+
+.hamburger-toggler.active .hamburger-icon span::before {
+  left: 0;
+  transform: rotate3d(0, 0, 1, 45deg);
+}
+
+.hamburger-toggler.active .hamburger-icon span::after {
+  right: 0;
+  transform: rotate3d(0, 0, 1, -45deg);
+}
+
+.active-menu {
+  display: none;
+}
+
+@media (max-width: 780px) {
+  .menu {
+    gap: 35px;
+  }
+}
+@media (max-width: 700px) {
+  .hamburger-toggler {
+    z-index: 3;
+    display: block;
+    position: relative;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+  }
+  .menu {
+    display: none;
+  }
+}
+@media (any-hover: hover) {
+  .menu_list:not(.active):hover::before, .menu_list:not(.active):hover::after {
+    width: 100%;
+  }
+}/*# sourceMappingURL=headerStyles.css.map */
