@@ -6,6 +6,7 @@ import Projects from './pages/Projects/Projects'
 import Project from './pages/Project/Project'
 import Contacts from './pages/Contacts/Contacts'
 import Certifications from './pages/Certifications/Certifications'
+import './app.css'
 function App() {
 
   return (

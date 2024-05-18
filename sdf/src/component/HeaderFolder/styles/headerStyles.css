@@ -10,12 +10,6 @@
   padding: 30px 20px;
 }
 
-.logo {
-  -webkit-user-select: none;
-     -moz-user-select: none;
-          user-select: none;
-}
-
 .menu {
   display: flex;
   gap: 0 55px;

@@ -52,6 +52,7 @@ $swiper-pagination-color: #BDBDBD;
 
 
 .swiper-pagination{
+    user-select: none;
     width: auto;
     color: $swiper-pagination-color;
     font-size: $swiper-pagination-fraction-font-size;

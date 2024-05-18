@@ -35,10 +35,10 @@ function Projects() {
                 <img src={project3} alt="" className='third-project'/>
             </div>
             <Fade triggerOnce={true} delay={600}>
-                <a className='project-link' href="/Projects">
+                <Link className='project-link' to="/Projects">
                     <span>All Projects</span>
                     <img src={arrow} alt="" />
-                </a>
+                </Link>
             </Fade>
         </div>
     </section>

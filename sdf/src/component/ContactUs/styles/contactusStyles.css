@@ -44,12 +44,6 @@
   color: rgb(201, 96, 96) !important;
 }
 
-.contact-img {
-  -webkit-user-select: none;
-     -moz-user-select: none;
-          user-select: none;
-}
-
 .contact-block {
   display: flex;
   gap: 30px;

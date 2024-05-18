@@ -16,12 +16,6 @@
   position: relative;
 }
 
-img {
-  -webkit-user-select: none;
-     -moz-user-select: none;
-          user-select: none;
-}
-
 .project-block_img {
   -webkit-user-select: none;
      -moz-user-select: none;

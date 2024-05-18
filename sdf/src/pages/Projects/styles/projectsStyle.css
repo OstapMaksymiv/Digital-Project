@@ -18,6 +18,9 @@
 }
 
 .project-mainInf a {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
   padding: 15px 15px;
   display: flex;
   align-items: center;

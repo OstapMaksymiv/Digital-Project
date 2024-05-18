@@ -22,9 +22,6 @@
   grid-template-columns: repeat(2, 270px);
   gap: 10px 30px;
   grid-template-rows: repeat(3, 140px);
-  -webkit-user-select: none;
-     -moz-user-select: none;
-          user-select: none;
 }
 
 .about_images .about-imgF {

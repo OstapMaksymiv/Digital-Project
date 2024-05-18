@@ -1,4 +1,4 @@
-.container{
+    .container{
     max-width:1170px;
     margin: 0 auto;
 }
@@ -8,9 +8,7 @@
     justify-content: space-between;
     padding: 30px 20px;
 }
-.logo{
-    user-select: none;
-}
+
 .menu{
     display: flex;
     gap: 0 55px;
