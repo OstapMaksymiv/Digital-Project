@@ -35,16 +35,21 @@ function ContactUs() {
             </Fade>
             <div className="contact-block">
                 <form className= "contact-form">
-                    <input 
-                    type="text" 
-                    className="form-name"
-                    placeholder='Name' 
-                    required 
-                    value={name}
-                    onChange={(e) => setName(e.target.value)} 
-                />
                 <input 
                     type="text" 
+                    className="form-name"
+                    placeholder='Name'
+                    required 
+                    value={name}
+                    onChange={(e) => {
+                        const value = e.target.value;
+                        if (/^[A-Za-z]*$/.test(value)) {
+                            setName(value);
+                        }
+                    }} 
+                />
+                <input 
+                    type="number" 
                     className="formNumber" 
                     placeholder='Phone Number' 
                     required 
@@ -54,7 +59,8 @@ function ContactUs() {
                 <input 
                     type="text" 
                     className="formEmail" 
-                    placeholder='E-mail' 
+                    placeholder='E-mail'
+                    pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" 
                     required 
                     value={email}
                     onChange={(e) => setEmail(e.target.value)} 
@@ -72,6 +78,8 @@ function ContactUs() {
                     rows="12"
                     required
                     className="formTextarea" 
+                    minLength={10}
+                    maxLength={500}
                     placeholder='Message'
                     value={message}
                     onChange={(e) => setMessage(e.target.value)} 
@@ -81,11 +89,7 @@ function ContactUs() {
                     <label>By submitting an application you agree to the privacy policy</label>
                 </span>
                 </form>
-                {/* <Slide direction='right'  triggerOnce={true}>
-              <Fade  triggerOnce={true}> */}
                 <img src={b1} style={{width:'749px', height:'459px'}} alt="" className="contact-img" />
-                {/* </Fade>
-            </Slide> */}
             </div>
             <button onClick={handleClick} className='submit_btn' type='submit'>
                 <span>Send Email</span>
