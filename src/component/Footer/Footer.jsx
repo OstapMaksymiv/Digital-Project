@@ -4,7 +4,7 @@ import facebook from '@assets/facebook.png'
 import linkedIn from '@assets/LinkedIn.png'
 import pininterest from '@assets/pininterest.png'
 import twitter from '@assets/twitter.png'
-import { useLocation } from 'react-router-dom'
+import { useLocation, Link } from 'react-router-dom'
 import { useRef, useState } from 'react'
 function Footer() {
     const location = useLocation()
@@ -24,11 +24,12 @@ function Footer() {
                     <a href={pathname === '/' ? '#' : '/'}><img src={Flogo} alt="" /></a>
                     <ul className="footer-information">
                         <h4>Information</h4>
-                        <li><a href={pathname === '/' ? '#' : '/'}>Main</a></li>
-                        <li><a href={pathname === '/Gallery' ? '#' : '/Gallery'}>Gallery</a></li>
-                        <li><a href={pathname === '/Projects' ? '#' : '/Projects'}>Projects</a></li>
-                        <li><a href={pathname === '/Certifications' ? '#' : '/Certifications'}>Certifications</a></li>
-                        <li><a href={pathname === '/Contacts' ? '#' : '/Contacts'}>Contacts</a></li>
+
+                        <li><Link to={pathname === '/' ? '#' : '/'}>Main</Link></li>
+                        <li><Link to={pathname === '/Gallery' ? '#' : '/Gallery'}>Gallery</Link></li>
+                        <li><Link to={pathname === '/Projects' ? '#' : '/Projects'}>Projects</Link></li>
+                        <li><Link to={pathname === '/Certifications' ? '#' : '/Certifications'}>Certifications</Link></li>
+                        <li><Link to={pathname === '/Contacts' ? '#' : '/Contacts'}>Contacts</Link></li>
                     </ul>
                     <ul className="footer-contacts">
                         <h4>Contacts</h4>

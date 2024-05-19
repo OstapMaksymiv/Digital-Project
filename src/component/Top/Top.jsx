@@ -3,6 +3,7 @@ import Slider from "react-slick";
 import { FaArrowLeft, FaArrowRight } from 'react-icons/fa';
 import arrow from '@assets/arrow.svg';
 import { Fade } from "react-awesome-reveal";
+import { Link } from 'react-router-dom';
 const CustomPrevArrowW = (props) => {
     const { onClick } = props;
     return (
@@ -44,27 +45,27 @@ function Top() {
                             <h2>W.L-House</h2>
                         </div>
                         <Fade triggerOnce={true}>
-                          <a href="/Projects">
+                          <Link to="/Projects">
                               <span>View Project</span>
                               <img src={arrow} alt="" />
-                          </a>
+                          </Link>
                         </Fade>
                     </div>
                     <div className='slideImg slide2'>
                         <p>Build your Way</p>
-                        <a href="">
+                        <Link to="#">
                             <i className="ri-arrow-up-s-line"></i>
-                        </a>
+                        </Link>
                     </div>
                     <div className='slideImg slide3'>
                         <div>
                             <h1>PROJECT</h1>
                             <h2>Glass-LA</h2>
                         </div>
-                        <a href="/Projects">
+                        <Link to="/Projects">
                             <span>View Project</span>
                             <img src={arrow} alt="" />
-                        </a>
+                        </Link>
                     </div>
                     <div className='slideImg slide4'>
                     </div>
