@@ -10,7 +10,7 @@ import './app.css'
 function App() {
 
   return (
-    <Router>
+    <BrowserRouter>
       <Routes>
         <Route element={<Layout/>}>
           <Route path="/" element={<Main/>}/>
@@ -21,7 +21,7 @@ function App() {
           <Route path="/Contacts" element={<Contacts/>}/>
         </Route>
       </Routes>
-    </Router>
+    </BrowserRouter>
   )
 }
 
